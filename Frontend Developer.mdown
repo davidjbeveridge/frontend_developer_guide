@@ -1,0 +1,176 @@
+# A Guide to Learning Frontend Development
+
+
+Hello, and welcome to the wonderful world of frontend development.  This guide
+is designed to help you get up to speed as quickly as possible and build on 
+your knowledge as you progress.
+
+# Introduction
+
+This guide will walk you through the basics of frontend development.  We will
+cover writing page markup, styling, and scripting.  We will also talk about
+the separating concerns, and introduce you to useful libraries and tools.
+
+## Prerequisites
+
+It is assumed that you have some background in programming, and have at least 
+cursory knowledge of web browsers, servers, HTTP, the request/response cycle.
+
+### Software engineering practices
+
+You will need to use good software engineering &amp; craftsmanship when doing
+frontend development, at least as much as you need to when programming
+anything else.  All too often, best practices are left by the wayside when it
+comes to the frontend; code quality gets neglected, concerns bleed together,
+the codebase becomes unmaintainable, and developers dread working on the code;
+deadlines get missed, software breaks in production, and the [results can be
+disastrous][bugresult].
+
+[bugresult]: http://www5.in.tum.de/~huckle/bugse.html
+
+Recommended reading:
+
+* [The Pragmatic Programmer](http://pragprog.com/book/tpp/the-pragmatic-programmer)
+  by Dave Thomas &amp; Andy Hunt
+* [Code Complete](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670)
+  by Steve McConnell
+* [Clean Code](http://www.amazon.com/gp/product/0132350882)
+  by Robert C. Martin
+* [The Clean Coder](http://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073)
+  by Robert C. Martin
+* [Refactoring](http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672)
+  by Martin Fowler, et al.
+
+### A great environment
+
+#### A great editor
+
+You need an editor that will allow you to be fast, and will integrate with
+your environment.  You probably don't need an IDE, but I won't stop you.  I
+recommend the following editors:
+
+* [TextMate](http://macromates.com/)
+* [Sublime Text](http://www.sublimetext.com/)
+* [Vim](http://www.vim.org/)
+* [Emacs](http://www.gnu.org/software/emacs/)
+
+If you're using a command-line editor like Vim or Emacs, I recommend you also
+look at a terminal multiplexer like [screen][gnuscreen] or [tmux][tmux].
+
+[tmux]: http://tmux.sourceforge.net/
+
+#### Source Control
+
+You need something to manage your source code, and I don't mean your
+filesystem.  Even if you are a single developer, source control can save your
+butt.  If you're on a team, it will also help you with merging code and should
+inform deployment as well.  Check out a DVCS like:
+
+* [Git](http://git-scm.com/)
+* [Mercurial](http://mercurial.selenic.com/)
+
+#### A frontend mentor
+
+This guide is a curriculum, and you can use it on your own.  However, I have
+found that I learn best when I have someone who can help me when I get stuck,
+who can point out what I can't see, and who can fill in the gaps in my code.
+Find another experienced frontend developer to help you learn.
+
+## How to use this guide
+
+Frontend web development is multi-faceted and involves many different skills.
+This guide is ordered so as to build your skills incrementally, as many skills
+later in the guide require a solid foundation.  Some sections require you to
+go in order; others can be skimmed or skipped if you already have experience
+in those disciplines.  The following sections need to be done in order:
+
+* JavaScript
+  - Functions
+  - Scope
+  - Constructors & Prototypes
+  - Built-in Libraries
+  - The Bad Parts
+* Browser Object Model
+* Document Object Model
+* Modular Development
+* Testing Tools
+* Common JavaScript Libraries
+* CoffeeScript
+* MV* Framework(s)
+
+
+## Basic Outline
+
+* Basic HTML
+* Basic CSS
+* JavaScript
+  - Functions
+  - Scope
+  - Constructors & Prototypes
+  - Built-in Libraries
+  - The Bad Parts
+* Browser Object Model
+* Document Object Model
+* Cross-browser gotchas
+* Modular Development
+* Testing Tools
+* Common JavaScript Libraries
+* CoffeeScript
+* Sass/Compass/LESS
+* Haml/Slim
+* MV* Framework(s)
+
+
+## Markup
+
+## Styling
+
+### CSS
+
+* [CSS Basics](http://www.cssbasics.com/)
+* [CSS3 Quick Reference](http://media.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)
+* [CSS Systems](http://clearleft.s3.amazonaws.com/2008/cssSystems_notes_small.pdf)
+* [SMACSS Book](http://smacss.com/book/)
+* [Sass-Lang.com](http://sass-lang.com/)
+* [Sass Tutorial](http://sass-lang.com/tutorial.html)
+* [Sass API Reference](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html)
+
+## Scripting
+
+### JavaScript
+
+* [JavaScript Enlightenment](http://www.javascriptenlightenment.com/JavaScript_Enlightenment.pdf)
+* Essential JavaScript Design Patterns
+    [HTML](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+    [PDF](https://github.com/addyosmani/essential-js-design-patterns/blob/1.5.2/formats/essential-js-dp.pdf?raw=true)
+* [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [JavaScript Garden](http://bonsaiden.github.io/JavaScript-Garden/)
+* [10 Things I learned from the jQuery source](http://www.paulirish.com/2010/10-things-i-learned-from-the-jquery-source/)
+
+### CoffeeScript
+
+* [CoffeeScript.org](http://coffeescript.org/)
+* [The Little Book on CoffeeScript](http://arcturo.github.io/library/coffeescript/)
+* [CoffeeScript Cookbook](http://coffeescriptcookbook.com/)
+* [Smooth CoffeeScript](http://autotelicum.github.io/Smooth-CoffeeScript/)
+* [Testing with CoffeeScript](https://efendibooks.com/minibooks/testing-with-coffeescript)
+* [CoffeeScript Ristretto](http://ristrettolo.gy/)
+
+### DOM Manipulation
+
+* [DOM Enlightenment](http://domenlightenment.com/)
+
+### jQuery
+
+* [jQuery Fundamentals](http://jqfundamentals.com/)
+* [jQuery API docs](http://api.jquery.com/)
+* [Using jQuery Core](http://learn.jquery.com/using-jquery-core/)
+* [Try jQuery](http://try.jquery.com/)
+* [jQuery Succinctly](http://www.syncfusion.com/resources/techportal/ebooks/jquery)
+
+
+### Single-page Apps
+
+* [Patterns for Large-Scale JavaScript Application Architecture](http://addyosmani.com/largescalejavascript/)
+* [Backbone Fundamentals](https://github.com/addyosmani/backbone-fundamentals/blob/gh-pages/backbone-fundamentals.pdf?raw=true)
+* [Single page apps in depth](http://singlepageappbook.com/index.html)
