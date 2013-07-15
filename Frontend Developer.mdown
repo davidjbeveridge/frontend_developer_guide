@@ -1,15 +1,21 @@
 # A Guide to Learning Frontend Development
 
-
 Hello, and welcome to the wonderful world of frontend development.  This guide
-is designed to help you get up to speed as quickly as possible and build on 
-your knowledge as you progress.
+is designed to help you get up to speed as quickly as possible.
 
 # Introduction
 
 This guide will walk you through the basics of frontend development.  We will
 cover writing page markup, styling, and scripting.  We will also talk about
-the separating concerns, and introduce you to useful libraries and tools.
+separating concerns, commone patterns, and introduce you to useful libraries
+and tools.
+
+## How to use this guide
+
+The concepts presented in each of the resources below build upon one another,
+so I recommend you follow the material linearly.  As of this writing, this is
+basically a reading list.  I plan to add some tests and example projects at
+some point.
 
 ## Prerequisites
 
@@ -47,7 +53,7 @@ Recommended reading:
 
 You need an editor that will allow you to be fast, and will integrate with
 your environment.  You probably don't need an IDE, but I won't stop you.  I
-recommend the following editors:
+recommend any of the following editors:
 
 * [TextMate](http://macromates.com/)
 * [Sublime Text](http://www.sublimetext.com/)
@@ -55,9 +61,43 @@ recommend the following editors:
 * [Emacs](http://www.gnu.org/software/emacs/)
 
 If you're using a command-line editor like Vim or Emacs, I recommend you also
-look at a terminal multiplexer like [screen][gnuscreen] or [tmux][tmux].
+look at a terminal multiplexer like [tmux][tmux].
 
 [tmux]: http://tmux.sourceforge.net/
+
+#### Web Browser(s)
+
+You'll need at least one web browser (probably more).  As of this writing, I
+recommend [Google Chrome][google_chrome].  Check out any or all of the
+following:
+
+* [Google Chrome][google_chrome]
+* [Mozilla Firefox](http://firefox.com)
+* [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie)
+* [Multiple IE](http://tredosoft.com/Multiple_IE) for running older versions
+  of IE
+* [Safari](http://support.apple.com/downloads/#safari)
+* [XCode](https://developer.apple.com/xcode/)
+* [Android SDK](http://developer.android.com/sdk/index.html)
+
+[google_chrome]: https://www.google.com/intl/en/chrome/browser/
+
+##### Mobile Browser Testing
+
+You'll need to test your sites &amp; applications on mobile platforms.  If you
+have a smartphone, obviously, you can use that; for other platforms, check out
+[Testing a Mobile Website on Mac OS X][testing_mobile_macos].  On Windows,
+you'll need to set up the Android SDK for testing, and you can emulate the iOS
+version of Safari via the desktop version for Windows, as per
+[this StackOverflow answer][safari_windows_SO].
+
+[testing_mobile_macos]: http://fynydd.com/blog/tech/testing-a-mobile-website-on-mac-os-x/
+[safari_windows_SO]: http://stackoverflow.com/questions/3882233/iphone-browser-simulator-for-windows
+
+#### Virtualization software
+
+You might need to load other operating systems occasionally for testing.
+Check out [VirtualBox](https://www.virtualbox.org/).
 
 #### Source Control
 
@@ -69,35 +109,12 @@ inform deployment as well.  Check out a DVCS like:
 * [Git](http://git-scm.com/)
 * [Mercurial](http://mercurial.selenic.com/)
 
-#### A frontend mentor
+### A frontend mentor
 
 This guide is a curriculum, and you can use it on your own.  However, I have
 found that I learn best when I have someone who can help me when I get stuck,
 who can point out what I can't see, and who can fill in the gaps in my code.
 Find another experienced frontend developer to help you learn.
-
-## How to use this guide
-
-Frontend web development is multi-faceted and involves many different skills.
-This guide is ordered so as to build your skills incrementally, as many skills
-later in the guide require a solid foundation.  Some sections require you to
-go in order; others can be skimmed or skipped if you already have experience
-in those disciplines.  The following sections need to be done in order:
-
-* JavaScript
-  - Functions
-  - Scope
-  - Constructors & Prototypes
-  - Built-in Libraries
-  - The Bad Parts
-* Browser Object Model
-* Document Object Model
-* Modular Development
-* Testing Tools
-* Common JavaScript Libraries
-* CoffeeScript
-* MV* Framework(s)
-
 
 ## Basic Outline
 
@@ -120,20 +137,28 @@ in those disciplines.  The following sections need to be done in order:
 * Haml/Slim
 * MV* Framework(s)
 
+# Reading List
 
 ## Markup
+
+* [HTML Dog HTML Tutorials](http://www.htmldog.com/guides/html/)
+* [Dive Into HTML5](http://diveintohtml5.info/)
 
 ## Styling
 
 ### CSS
 
 * [CSS Basics](http://www.cssbasics.com/)
+* [HTML Dog CSS Tutorials](http://www.htmldog.com/guides/css/)
 * [CSS3 Quick Reference](http://media.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)
 * [CSS Systems](http://clearleft.s3.amazonaws.com/2008/cssSystems_notes_small.pdf)
 * [SMACSS Book](http://smacss.com/book/)
+
+#### CSS PreProcessors
 * [Sass-Lang.com](http://sass-lang.com/)
 * [Sass Tutorial](http://sass-lang.com/tutorial.html)
 * [Sass API Reference](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html)
+* [LessCSS](http://lesscss.org/)
 
 ## Scripting
 
@@ -174,3 +199,9 @@ in those disciplines.  The following sections need to be done in order:
 * [Patterns for Large-Scale JavaScript Application Architecture](http://addyosmani.com/largescalejavascript/)
 * [Backbone Fundamentals](https://github.com/addyosmani/backbone-fundamentals/blob/gh-pages/backbone-fundamentals.pdf?raw=true)
 * [Single page apps in depth](http://singlepageappbook.com/index.html)
+
+#### MV* Frameworks
+
+* [TodoMVC](http://todomvc.com/) is a collection of simple todo-apps written
+  using a handful of JavaScript MV* frameworks,
+
