@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Frontend developer guide by davidjbeveridge</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Frontend developer guide</h1>
+        <h2>a quick-start guide for frontend developement</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/davidjbeveridge/frontend_developer_guide/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/davidjbeveridge/frontend_developer_guide/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/davidjbeveridge/frontend_developer_guide" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="a-guide-to-learning-frontend-development" class="anchor" href="#a-guide-to-learning-frontend-development"><span class="octicon octicon-link"></span></a>A Guide to Learning Frontend Development</h1>
+
+<p>Hello, and welcome to the wonderful world of frontend development.  This guide
+is designed to help you get up to speed as quickly as possible.</p>
+
+<h1>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>This guide will walk you through the basics of frontend development.  We will
+cover writing page markup, styling, and scripting.  We will also talk about
+separating concerns, commone patterns, and introduce you to useful libraries
+and tools.</p>
+
+<h2>
+<a name="how-to-use-this-guide" class="anchor" href="#how-to-use-this-guide"><span class="octicon octicon-link"></span></a>How to use this guide</h2>
+
+<p>The concepts presented in each of the resources below build upon one another,
+so I recommend you follow the material linearly.  As of this writing, this is
+basically a reading list.  I plan to add some tests and example projects at
+some point.</p>
+
+<h2>
+<a name="prerequisites" class="anchor" href="#prerequisites"><span class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<p>It is assumed that you have some background in programming, and have at least 
+cursory knowledge of web browsers, servers, HTTP, the request/response cycle.</p>
+
+<h3>
+<a name="software-engineering-practices" class="anchor" href="#software-engineering-practices"><span class="octicon octicon-link"></span></a>Software engineering practices</h3>
+
+<p>You will need to use good software engineering &amp; craftsmanship when doing
+frontend development, at least as much as you need to when programming
+anything else.  All too often, best practices are left by the wayside when it
+comes to the frontend; code quality gets neglected, concerns bleed together,
+the codebase becomes unmaintainable, and developers dread working on the code;
+deadlines get missed, software breaks in production, and the <a href="http://www5.in.tum.de/%7Ehuckle/bugse.html">results can be
+disastrous</a>.</p>
+
+<p>Recommended reading:</p>
+
+<ul>
+<li>
+<a href="http://pragprog.com/book/tpp/the-pragmatic-programmer">The Pragmatic Programmer</a>
+by Dave Thomas &amp; Andy Hunt</li>
+<li>
+<a href="http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670">Code Complete</a>
+by Steve McConnell</li>
+<li>
+<a href="http://www.amazon.com/gp/product/0132350882">Clean Code</a>
+by Robert C. Martin</li>
+<li>
+<a href="http://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073">The Clean Coder</a>
+by Robert C. Martin</li>
+<li>
+<a href="http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672">Refactoring</a>
+by Martin Fowler, et al.</li>
+</ul><h3>
+<a name="a-great-environment" class="anchor" href="#a-great-environment"><span class="octicon octicon-link"></span></a>A great environment</h3>
+
+<h4>
+<a name="a-great-editor" class="anchor" href="#a-great-editor"><span class="octicon octicon-link"></span></a>A great editor</h4>
+
+<p>You need an editor that will allow you to be fast, and will integrate with
+your environment.  You probably don't need an IDE, but I won't stop you.  I
+recommend any of the following editors:</p>
+
+<ul>
+<li><a href="http://macromates.com/">TextMate</a></li>
+<li><a href="http://www.sublimetext.com/">Sublime Text</a></li>
+<li><a href="http://www.vim.org/">Vim</a></li>
+<li><a href="http://www.gnu.org/software/emacs/">Emacs</a></li>
+</ul><p>If you're using a command-line editor like Vim or Emacs, I recommend you also
+look at a terminal multiplexer like <a href="http://tmux.sourceforge.net/">tmux</a>.</p>
+
+<h4>
+<a name="web-browsers" class="anchor" href="#web-browsers"><span class="octicon octicon-link"></span></a>Web Browser(s)</h4>
+
+<p>You'll need at least one web browser (probably more).  As of this writing, I
+recommend <a href="https://www.google.com/intl/en/chrome/browser/">Google Chrome</a>.  Check out any or all of the
+following:</p>
+
+<ul>
+<li><a href="https://www.google.com/intl/en/chrome/browser/">Google Chrome</a></li>
+<li><a href="http://firefox.com">Mozilla Firefox</a></li>
+<li><a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a></li>
+<li>
+<a href="http://tredosoft.com/Multiple_IE">Multiple IE</a> for running older versions
+of IE</li>
+<li><a href="http://support.apple.com/downloads/#safari">Safari</a></li>
+<li><a href="https://developer.apple.com/xcode/">XCode</a></li>
+<li><a href="http://developer.android.com/sdk/index.html">Android SDK</a></li>
+</ul><h5>
+<a name="mobile-browser-testing" class="anchor" href="#mobile-browser-testing"><span class="octicon octicon-link"></span></a>Mobile Browser Testing</h5>
+
+<p>You'll need to test your sites &amp; applications on mobile platforms.  If you
+have a smartphone, obviously, you can use that; for other platforms, check out
+<a href="http://fynydd.com/blog/tech/testing-a-mobile-website-on-mac-os-x/">Testing a Mobile Website on Mac OS X</a>.  On Windows,
+you'll need to set up the Android SDK for testing, and you can emulate the iOS
+version of Safari via the desktop version for Windows, as per
+<a href="http://stackoverflow.com/questions/3882233/iphone-browser-simulator-for-windows">this StackOverflow answer</a>.</p>
+
+<h4>
+<a name="virtualization-software" class="anchor" href="#virtualization-software"><span class="octicon octicon-link"></span></a>Virtualization software</h4>
+
+<p>You might need to load other operating systems occasionally for testing.
+Check out <a href="https://www.virtualbox.org/">VirtualBox</a>.</p>
+
+<h4>
+<a name="source-control" class="anchor" href="#source-control"><span class="octicon octicon-link"></span></a>Source Control</h4>
+
+<p>You need something to manage your source code, and I don't mean your
+filesystem.  Even if you are a single developer, source control can save your
+butt.  If you're on a team, it will also help you with merging code and should
+inform deployment as well.  Check out a DVCS like:</p>
+
+<ul>
+<li><a href="http://git-scm.com/">Git</a></li>
+<li><a href="http://mercurial.selenic.com/">Mercurial</a></li>
+</ul><h3>
+<a name="a-frontend-mentor" class="anchor" href="#a-frontend-mentor"><span class="octicon octicon-link"></span></a>A frontend mentor</h3>
+
+<p>This guide is a curriculum, and you can use it on your own.  However, I have
+found that I learn best when I have someone who can help me when I get stuck,
+who can point out what I can't see, and who can fill in the gaps in my code.
+Find another experienced frontend developer to help you learn.</p>
+
+<h2>
+<a name="basic-outline" class="anchor" href="#basic-outline"><span class="octicon octicon-link"></span></a>Basic Outline</h2>
+
+<ul>
+<li>Basic HTML</li>
+<li>Basic CSS</li>
+<li>JavaScript
+
+<ul>
+<li>Functions</li>
+<li>Scope</li>
+<li>Constructors &amp; Prototypes</li>
+<li>Built-in Libraries</li>
+<li>The Bad Parts</li>
+</ul>
+</li>
+<li>Browser Object Model</li>
+<li>Document Object Model</li>
+<li>Cross-browser gotchas</li>
+<li>Modular Development</li>
+<li>Testing Tools</li>
+<li>Common JavaScript Libraries</li>
+<li>CoffeeScript</li>
+<li>Sass/Compass/LESS</li>
+<li>Haml/Slim</li>
+<li>MV* Framework(s)</li>
+</ul><h1>
+<a name="reading-list" class="anchor" href="#reading-list"><span class="octicon octicon-link"></span></a>Reading List</h1>
+
+<h2>
+<a name="markup" class="anchor" href="#markup"><span class="octicon octicon-link"></span></a>Markup</h2>
+
+<ul>
+<li><a href="http://www.htmldog.com/guides/html/">HTML Dog HTML Tutorials</a></li>
+<li><a href="http://diveintohtml5.info/">Dive Into HTML5</a></li>
+</ul><h2>
+<a name="styling" class="anchor" href="#styling"><span class="octicon octicon-link"></span></a>Styling</h2>
+
+<h3>
+<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h3>
+
+<ul>
+<li><a href="http://www.cssbasics.com/">CSS Basics</a></li>
+<li><a href="http://www.htmldog.com/guides/css/">HTML Dog CSS Tutorials</a></li>
+<li><a href="http://media.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf">CSS3 Quick Reference</a></li>
+<li><a href="http://clearleft.s3.amazonaws.com/2008/cssSystems_notes_small.pdf">CSS Systems</a></li>
+<li><a href="http://smacss.com/book/">SMACSS Book</a></li>
+</ul><h4>
+<a name="css-preprocessors" class="anchor" href="#css-preprocessors"><span class="octicon octicon-link"></span></a>CSS PreProcessors</h4>
+
+<ul>
+<li><a href="http://sass-lang.com/">Sass-Lang.com</a></li>
+<li><a href="http://sass-lang.com/tutorial.html">Sass Tutorial</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html">Sass API Reference</a></li>
+<li><a href="http://lesscss.org/">LessCSS</a></li>
+</ul><h2>
+<a name="scripting" class="anchor" href="#scripting"><span class="octicon octicon-link"></span></a>Scripting</h2>
+
+<h3>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>JavaScript</h3>
+
+<ul>
+<li><a href="http://www.javascriptenlightenment.com/JavaScript_Enlightenment.pdf">JavaScript Enlightenment</a></li>
+<li>Essential JavaScript Design Patterns
+<a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">HTML</a>
+<a href="https://github.com/addyosmani/essential-js-design-patterns/blob/1.5.2/formats/essential-js-dp.pdf?raw=true">PDF</a>
+</li>
+<li><a href="http://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+<li><a href="http://bonsaiden.github.io/JavaScript-Garden/">JavaScript Garden</a></li>
+<li><a href="http://www.paulirish.com/2010/10-things-i-learned-from-the-jquery-source/">10 Things I learned from the jQuery source</a></li>
+</ul><h3>
+<a name="coffeescript" class="anchor" href="#coffeescript"><span class="octicon octicon-link"></span></a>CoffeeScript</h3>
+
+<ul>
+<li><a href="http://coffeescript.org/">CoffeeScript.org</a></li>
+<li><a href="http://arcturo.github.io/library/coffeescript/">The Little Book on CoffeeScript</a></li>
+<li><a href="http://coffeescriptcookbook.com/">CoffeeScript Cookbook</a></li>
+<li><a href="http://autotelicum.github.io/Smooth-CoffeeScript/">Smooth CoffeeScript</a></li>
+<li><a href="https://efendibooks.com/minibooks/testing-with-coffeescript">Testing with CoffeeScript</a></li>
+<li><a href="http://ristrettolo.gy/">CoffeeScript Ristretto</a></li>
+</ul><h3>
+<a name="dom-manipulation" class="anchor" href="#dom-manipulation"><span class="octicon octicon-link"></span></a>DOM Manipulation</h3>
+
+<ul>
+<li><a href="http://domenlightenment.com/">DOM Enlightenment</a></li>
+</ul><h3>
+<a name="jquery" class="anchor" href="#jquery"><span class="octicon octicon-link"></span></a>jQuery</h3>
+
+<ul>
+<li><a href="http://jqfundamentals.com/">jQuery Fundamentals</a></li>
+<li><a href="http://api.jquery.com/">jQuery API docs</a></li>
+<li><a href="http://learn.jquery.com/using-jquery-core/">Using jQuery Core</a></li>
+<li><a href="http://try.jquery.com/">Try jQuery</a></li>
+<li><a href="http://www.syncfusion.com/resources/techportal/ebooks/jquery">jQuery Succinctly</a></li>
+</ul><h3>
+<a name="single-page-apps" class="anchor" href="#single-page-apps"><span class="octicon octicon-link"></span></a>Single-page Apps</h3>
+
+<ul>
+<li><a href="http://addyosmani.com/largescalejavascript/">Patterns for Large-Scale JavaScript Application Architecture</a></li>
+<li><a href="https://github.com/addyosmani/backbone-fundamentals/blob/gh-pages/backbone-fundamentals.pdf?raw=true">Backbone Fundamentals</a></li>
+<li><a href="http://singlepageappbook.com/index.html">Single page apps in depth</a></li>
+</ul><h4>
+<a name="mv-frameworks" class="anchor" href="#mv-frameworks"><span class="octicon octicon-link"></span></a>MV* Frameworks</h4>
+
+<ul>
+<li>
+<a href="http://todomvc.com/">TodoMVC</a> is a collection of simple todo-apps written
+using a handful of JavaScript MV* frameworks,</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
