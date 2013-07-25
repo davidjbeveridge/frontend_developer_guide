@@ -1,0 +1,106 @@
+# Reading List for Frontend Developers
+
+The following is a collection of resources for learning frontend development.
+All the resources listed here are available for free online.
+
+## Markup
+
+* [HTML Dog HTML Tutorials](http://www.htmldog.com/guides/html/)
+* [Dive Into HTML5](http://diveintohtml5.info/)
+
+### Other
+
+Consider subscribing to [HTML5 Weekly](http://html5weekly.com/)
+
+## Styling
+
+### CSS
+
+* [CSS Basics](http://www.cssbasics.com/)
+* [HTML Dog CSS Tutorials](http://www.htmldog.com/guides/css/)
+* [CSS3 Quick Reference](http://media.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)
+* [CSS Systems](http://clearleft.s3.amazonaws.com/2008/cssSystems_notes_small.pdf)
+* [SMACSS Book](http://smacss.com/book/)
+
+#### CSS PreProcessors
+* [Sass-Lang.com](http://sass-lang.com/)
+* [Sass Tutorial](http://sass-lang.com/tutorial.html)
+* [Sass API Reference](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html)
+* [LessCSS](http://lesscss.org/)
+
+## Scripting
+
+### JavaScript
+
+* [JavaScript Enlightenment](http://www.javascriptenlightenment.com/JavaScript_Enlightenment.pdf)
+* Essential JavaScript Design Patterns
+    [HTML](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+    [PDF](https://github.com/addyosmani/essential-js-design-patterns/blob/1.5.2/formats/essential-js-dp.pdf?raw=true)
+* [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [JavaScript Garden](http://bonsaiden.github.io/JavaScript-Garden/)
+* [10 Things I learned from the jQuery source](http://www.paulirish.com/2010/10-things-i-learned-from-the-jquery-source/)
+
+### CoffeeScript
+
+* [CoffeeScript.org](http://coffeescript.org/)
+* [The Little Book on CoffeeScript](http://arcturo.github.io/library/coffeescript/)
+* [CoffeeScript Cookbook](http://coffeescriptcookbook.com/)
+* [Smooth CoffeeScript](http://autotelicum.github.io/Smooth-CoffeeScript/)
+* [Testing with CoffeeScript](https://efendibooks.com/minibooks/testing-with-coffeescript)
+* [CoffeeScript Ristretto](http://ristrettolo.gy/)
+
+### DOM Manipulation
+
+* [DOM Enlightenment](http://domenlightenment.com/)
+
+### jQuery
+
+* [jQuery Fundamentals](http://jqfundamentals.com/)
+* [jQuery API docs](http://api.jquery.com/)
+* [Using jQuery Core](http://learn.jquery.com/using-jquery-core/)
+* [Try jQuery](http://try.jquery.com/)
+* [jQuery Succinctly](http://www.syncfusion.com/resources/techportal/ebooks/jquery)
+
+### Utility libraries
+
+* [Underscore](http://underscorejs.org/)
+* [LoDash](http://lodash.com/)
+
+### Modules
+
+* [Writing Modular JS](http://addyosmani.com/writing-modular-js/)
+  by Addy Osmani
+* [RequireJS](http://requirejs.org/)
+* [curl.js](https://github.com/cujojs/curl)
+
+### Promises, Futures, and Deferreds
+
+* [jQuery Deferred](http://api.jquery.com/category/deferred-object/)
+* [q](https://github.com/kriskowal/q)
+* [Async.js](https://github.com/caolan/async)
+
+### Single-page Apps
+
+* [Patterns for Large-Scale JavaScript Application Architecture](http://addyosmani.com/largescalejavascript/)
+* [Backbone Fundamentals](https://github.com/addyosmani/backbone-fundamentals/blob/gh-pages/backbone-fundamentals.pdf?raw=true)
+* [Single page apps in depth](http://singlepageappbook.com/index.html)
+
+### MV* Frameworks
+
+* [TodoMVC](http://todomvc.com/) is a collection of simple todo-apps written
+  using a handful of JavaScript MV* frameworks.
+* [Spine.js](http://spinejs.com/)
+* [Backbone.js](http://backbonejs.org/)
+* [Ember.js](http://emberjs.com/)
+* [AngularJS](http://angularjs.org/)
+
+### Where can I find X?
+
+A list of JavaScript tools can be found at:
+
+* [JSter](http://jster.net/)
+* [JS Wiki](https://github.com/bebraw/jswiki/wiki)
+
+### Other
+
+Consider subscribing to [JavaScript Weekly](http://javascriptweekly.com/)
